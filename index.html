@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Problem Solving 6</title>
+</head>
+<body>
+  <h1>Gowtham</h1>
+
+
+<!-- 1. Write a function that changes the text content of a given element. -->
+  
+  <p id="myParagraph">Origin.Wal text</p>
+  
+  <button onclick="changeText()">Change Text</button>
+
+
+<!-- 2. Write a function that counts and displays the number of characters in a text input -->
+
+  <input type="text" id="textInput" oninput="characterCounter()">
+  <p id="characterCount">0</p>
+
+
+<!-- 3. Create a simple image gallery that allows users to click on thumbnails and display the selected image in a larger view. -->
+
+<div class="image-gallery">
+
+  <img class="img" src="./img/IMG_20210706_100106_020.jpg" onclick="showImage('image1.jpg')">
+
+  <img class="img" src="./img/IMG_20201004_122329_974.jpg" onclick="showImage('image2.jpg')">
+
+  <img class="img" src="./img/IMG_20201116_201859_841.jpg" onclick="showImage('image3.jpg')">
+
+</div>
+
+<img id="largeImage" src="" style="display: none;">
+
+
+<!-- 4. Write a function that counts and displays the frequency of each word in a given sentence. -->
+
+<textarea id="sentenceInput"></textarea>
+
+<button onclick="wordFrequencyCounter()">Count Words</button>
+
+<ul id="wordList"></ul>
+
+
+<!-- 5. Write a function that checks if two password inputs match and displays the result. -->
+
+<input type="password" id="password1" placeholder="Enter password">
+
+<input type="password" id="password2" placeholder="Confirm password">
+
+<button onclick="checkPasswordMatch()">Check Match</button>
+
+<p id="matchResult"></p>
+
+
+<!-- 6. Write a function that validates a credit card number and displays the result. -->
+
+<input type="text" id="creditCardInput" placeholder="Enter credit card number">
+
+<button onclick="validateCreditCard()">Validate</button>
+
+<p id="validationResult"></p>
+
+
+<!-- 7. Create a dynamic list where users can add and remove items. -->
+
+<input type="text" id="itemInput" placeholder="Enter item">
+
+<button onclick="addItem()">Add Item</button>
+
+<ul id="itemList"></ul>
+
+
+
+<!-- 8. Write a function that checks if a given word is a palindrome and displays the result. -->
+
+<input type="text" id="wordInput" placeholder="Enter a word">
+
+<button onclick="checkPalindrome()">Check Palindrome</button>
+
+<p id="palindromeResult"></p>
+
+
+
+<!-- 9. Create a countdown timer that starts when a button is clicked and displays the remaining time. -->
+
+<button onclick="startTimer(60)">Start Timer</button>
+
+<p id="timerDisplay">Time remaining: </p>
+
+
+
+<!-- 10. Create a dark mode toggle that switches the page between light and dark themes. -->
+
+<button onclick="toggleDarkMode()">Toggle Dark Mode >
+
+
+
+
+<script src="./script.js"></script>
+</body>
+</html>
